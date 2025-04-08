@@ -24,7 +24,7 @@ jobs:
         flake8 --max-line-length=88 .
     - name: Lint with Mypy
       run: |
-        mypy
+        mypy .
     - name: Lint with Black
       run: |
         black --diff --check .
